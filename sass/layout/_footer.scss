@@ -1,0 +1,40 @@
+.footer {
+  font-weight: bold;
+  height: 252px;
+  font-size: 26px;
+  line-height: 31px;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.color-footer {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.footer__link {
+  color: #2196f3;
+  text-decoration: none;
+}
+.footer-link__address {
+  margin-bottom: 20px;
+}
+.address {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 9px;
+  &:focus {
+    color: #2196f3;
+  }
+  &:hover {
+    color: #2196f3;
+  }
+}

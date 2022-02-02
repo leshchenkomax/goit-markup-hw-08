@@ -1,0 +1,17 @@
+body {
+  background: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+}
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-decoration: none;
+}
+/* Весь тег Ul без точек */
+.list {
+  list-style: none;
+}

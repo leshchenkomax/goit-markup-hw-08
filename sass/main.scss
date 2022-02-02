@@ -1,0 +1,24 @@
+@import './utils/vars';
+@import './base/reset';
+@import './base/_commom.scss';
+@import './utils/hidden';
+
+//COMPONENTS
+
+@import './components/container';
+@import './components/button';
+@import './components/section-title';
+@import './components/section-banner';
+@import './components/button-portfolio';
+@import './components/cardset';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/team';
+@import './layout/clients';
+
+@import './layout/footer';
+@import './layout/address';
+@import './layout/contact';
+@import './layout/footer-social';
