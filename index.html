@@ -67,17 +67,16 @@
         </div>
       </div>
     </header> -->
-    <!--section button-->
-    <!-- <section class="section-banner">
+    <!--section button -->
+    <section class="section-banner">
       <h1 class="section-title">
         Эффективные решения <br />
         для вашего бизнеса
       </h1>
 
-      
       <button class="button shadow-textbt" type="button" data-modal-open>Заказать услугу</button>
     </section>
-    
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-button">
@@ -134,10 +133,10 @@
           <button class="form-btn basment-form-btn button" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!--hero-->
-    <!-- <main>
+    <main>
       <section class="hero">
         <div class="container hero__container">
           <h2 class="visually-hidden" hidden>CEO</h2>
@@ -192,7 +191,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Our work section-->
       <section class="work">
@@ -200,15 +199,37 @@
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="list work__list">
             <li class="work-list__photo">
-              <img src="./images/photo1.png" alt="Десктопные приложения" />
+              <picture>
+                <source
+                  srcset="./images/photo1.png 1x, ./images/photo1-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/photo1.png" alt="Десктопные приложения" />
+              </picture>
               <p class="work-title__text">Десктопные приложения</p>
             </li>
             <li class="work-list__photo">
-              <img src="./images/photo2.png" alt="Мобильные приложения" />
+              <picture>
+                <source
+                  srcset="./images/photo2.png 1x, ./images/photo2-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/photo2.png" alt="Мобильные приложения" />
+              </picture>
               <p class="work-title__text">Мобильные приложения</p>
             </li>
             <li class="work-list__photo">
-              <img src="./images/photo3.png" alt="Дизайнерские решения" />
+              <picture>
+                <source
+                  srcset="./images/photo3.png 1x, ./images/photo3-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/photo3.png" alt="Дизайнерские решения" />
+              </picture>
+
               <p class="work-title__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -222,7 +243,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="item">
-              <img class="img-block" src="./images/team1.png" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team1-desk-x1.png 1x, ./images/team1-desk-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team1-tablet-x1.png 1x, ./images/team1-tablet-x2.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team1-mob-x1.png 1x, ./images/team1-mob-x2.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="img-block" src="./images/team1-desk-x1.png" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p class="team-list__description">Product Designer</p>
               <ul class="list team-list__social-list social">
@@ -258,7 +293,22 @@
             </li>
 
             <li class="item">
-              <img class="img-block" src="./images/team2.png" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team2-desk-x1.png 1x, ./images/team2-desk-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team2-tablet-x1.png 1x, ./images/team2-tablet-x2.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team2-mob-x1.png 1x, ./images/team2-mob-x2.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="img-block" src="./images/team2-desk-x1.png" alt="Ольга Репина" />
+              </picture>
               <h3 class="team-list__title">Ольга Репина</h3>
               <p class="team-list__description">Frontend Developer</p>
               <ul class="list team-list__social-list social">
@@ -294,7 +344,22 @@
             </li>
 
             <li class="item">
-              <img class="img-block" src="./images/team3.png" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team3-desk-x1.png 1x, ./images/team3-desk-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team3-tablet-x1.png 1x, ./images/team3-tablet-x2.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team3-mob-x1.png 1x, ./images/team3-mob-x2.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="img-block" src="./images/team3-desk-x1.png" alt="Николай Тарасов" />
+              </picture>
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p class="team-list__description">Marketing</p>
               <ul class="list team-list__social-list social">
@@ -330,7 +395,22 @@
             </li>
 
             <li class="item">
-              <img class="img-block" src="./images/team4.png" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team4-desk-x1.png 1x, ./images/team4-desk-x2.png 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/team4-tablet-x1.png 1x, ./images/team4-tablet-x2.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team4-mob-x1.png 1x, ./images/team4-mob-x2.png 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="img-block" src="./images/team4-desk-x1.png" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p class="team-list__description">UI Designer</p>
               <ul class="list team-list__social-list social">
@@ -367,7 +447,7 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="clients">
         <div class="container">
           <h2 class="client__text">Постоянные клиенты</h2>
@@ -445,8 +525,8 @@
                 </li>
               </ul>
             </address> -->
-            <!--Правая часть футера-->
-            <!-- <div class="footer__connect connect">
+    <!--Правая часть футера-->
+    <!-- <div class="footer__connect connect">
               <h1 class="connect__social">присоединяйтесь</h1>
               <ul class="list connect-social__list">
                 <li class="connect-social__item">
@@ -505,7 +585,7 @@
           </div>
         </div>
       </div> -->
-    </footer>
+    <!-- </footer> -->
     <script src="./Js/modal.js"></script>
   </body>
 </html>
