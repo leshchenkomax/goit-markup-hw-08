@@ -13,16 +13,18 @@
   margin-right: auto;
   justify-items: left;
   margin-top: 20px;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 .connect-social__item:not(last-child) {
   margin-right: 10px;
 }
 .footer__connect {
-  margin-left: 70px;
-  margin-top: -25px;
+  // margin-left: 70px;
+  // margin-top: -25px;
 }
 .footer-link__inner {
-  display: flex;
+  // display: flex;
   align-items: flex-start;
   max-width: 100%;
 }

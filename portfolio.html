@@ -46,7 +46,7 @@
         <!--contacts sections -->
         <div class="connect">
           <ul class="list header-sections">
-            <li>
+            <li class="header-sections__item">
               <a class="connect__contact" href="mailto:info@devstudio.com"
                 ><svg class="contact-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-envelope"></use>
@@ -54,7 +54,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li>
+            <li class="header-sections__item">
               <a class="connect__contact" href="tel:+380961111111"
                 ><svg class="contact-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
@@ -345,89 +345,88 @@
     </main>
     <!--footer section-->
     <footer class="footer">
-      <div class="container">
-        <div>
+      <div class="container footer__container">
+        <div class="footer_box">
           <a class="footer__link" href="/index.html">Web<span class="color-footer">Studio</span></a>
-          <div class="footer-link__inner">
-            <address class="footer-link__address">
-              <ul class="list footer-link-address__cont">
-                <li>
-                  <a
-                    class="address"
-                    href="https://goo.gl/maps/Afqt2rmy2DsJCTwLA"
-                    target="_blank"
-                    rel="noopener noreferre"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li>
-                  <a class="footer-link-connect__list" href="mailto:info@devstudio.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="footer-link-connect__list" href="tel:+380961111111">+38 099 111 1111</a>
-                </li>
-              </ul>
-            </address>
-            <!--Правая часть футера-->
-            <div class="footer__connect">
-              <h1 class="connect__social">присоединяйтесь</h1>
-              <ul class="list connect-social__list">
-                <li class="connect-social__item">
-                  <a href="#" class="connect-social__link">
-                    <svg class="connect-social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="connect-social__item">
-                  <a href="#" class="connect-social__link">
-                    <svg class="connect-social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="connect-social__item">
-                  <a href="#" class="connect-social__link">
-                    <svg class="connect-social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="connect-social__item">
-                  <a href="#" class="connect-social__link">
-                    <svg class="connect-social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <address class="footer-link__address">
+            <ul class="list footer-link-address__cont">
+              <li>
+                <a
+                  class="address"
+                  href="https://goo.gl/maps/Afqt2rmy2DsJCTwLA"
+                  target="_blank"
+                  rel="noopener noreferre"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a class="footer-link-connect__list" href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-link-connect__list" href="tel:+380961111111">+38 099 111 1111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-link__inner"></div>
+        <!--Правая часть футера-->
+        <div class="footer__connect connect">
+          <h1 class="connect__social">присоединяйтесь</h1>
+          <ul class="list connect-social__list">
+            <li class="connect-social__item">
+              <a href="#" class="connect-social__link">
+                <svg class="connect-social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-social__item">
+              <a href="#" class="connect-social__link">
+                <svg class="connect-social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-social__item">
+              <a href="#" class="connect-social__link">
+                <svg class="connect-social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-social__item">
+              <a href="#" class="connect-social__link">
+                <svg class="connect-social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="basment-list__btn">
-              <h1 class="basement">Подпишитесь на рассылку</h1>
-              <form action="#" autocomplete="on">
-                <div class="mail-btn">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    id="basement"
-                    class="subscribe-email"
-                  />
-                  <div class="subscribe-btn">
-                    <button class="form-btn basment-list__form button" type="submit">
-                      Подписаться
-                      <svg class="basment-list__icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-icon-send-1"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </form>
+        <div class="basment-list__btn">
+          <h1 class="basement">Подпишитесь на рассылку</h1>
+          <form action="#" autocomplete="on">
+            <div class="mail-btn">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                id="basement"
+                class="subscribe-email"
+              />
+              <div class="subscribe-btn">
+                <button class="form-btn basment-list__form button" type="submit">
+                  Подписаться
+                  <svg class="basment-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send-1"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>

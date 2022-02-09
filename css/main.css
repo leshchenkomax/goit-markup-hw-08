@@ -503,12 +503,16 @@ body {
 }
 
 .mail-btn {
-  display: flex;
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .mail-btn {
+    display: flex;
+  }
+}
+
 .subscribe-email {
-  display: flex;
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -519,6 +523,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin-bottom: 20px;
   align-items: center;
   letter-spacing: 0.03em;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -527,9 +532,22 @@ body {
   border-radius: 4px;
 }
 
-.basment-list__btn {
-  margin-left: 109px;
-  margin-top: -25px;
+@media screen and (max-width: 479px) {
+  .subscribe-email {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basment-list__btn {
+    margin-left: 109px;
+  }
 }
 
 .subscribe-btn {
@@ -861,10 +879,6 @@ body {
   }
 }
 
-.hero-social__list .hero-social__item:not(last-child) {
-  margin-right: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .hero-social__list .hero-social__item:not(last-child) {
     width: calc(100% / 2 - 30px);
@@ -966,13 +980,13 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
-  margin-right: 30px;
   padding-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .item:not(last-child) {
     width: calc(100% / 2 - 30px);
+    margin-right: 30px;
   }
 }
 
@@ -1147,13 +1161,30 @@ body {
 }
 
 .footer {
+  font-family: Raleway;
   font-weight: bold;
-  height: 252px;
-  font-size: 26px;
-  line-height: 31px;
+  height: 100%;
+  font-size: 24px;
+  line-height: 28px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
 .color-footer {
@@ -1255,19 +1286,15 @@ body {
   margin-right: auto;
   justify-items: left;
   margin-top: 20px;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 .connect-social__item:not(last-child) {
   margin-right: 10px;
 }
 
-.footer__connect {
-  margin-left: 70px;
-  margin-top: -25px;
-}
-
 .footer-link__inner {
-  display: flex;
   align-items: flex-start;
   max-width: 100%;
 }

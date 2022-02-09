@@ -1,11 +1,28 @@
 .footer {
+  font-family: Raleway;
   font-weight: bold;
-  height: 252px;
-  font-size: 26px;
-  line-height: 31px;
+  height: 100%;
+  // font-size: 26px;
+  // line-height: 31px;
+  font-size: 24px;
+  line-height: 28px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+}
+.footer__container {
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .color-footer {
   font-weight: bold;

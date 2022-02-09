@@ -22,7 +22,7 @@
   }
 }
 .hero-social__list .hero-social__item:not(last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     margin: 15px;
@@ -31,6 +31,7 @@
     width: calc(100% / 4 - 30px);
     font-size: 26px;
     line-height: 33px;
+    // margin-right: 30px;
   }
 }
 .hero-social__item {
@@ -122,12 +123,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
-  margin-right: 30px;
+
   padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     // margin-right: 30px;
     width: calc(100% / 2 - 30px);
+    margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
