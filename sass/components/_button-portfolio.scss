@@ -24,10 +24,25 @@
 }
 .filter {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
+  }
 }
 
 .section-main {
   padding-top: 94px;
   margin-bottom: 50px;
+}
+.filter__item {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
 }

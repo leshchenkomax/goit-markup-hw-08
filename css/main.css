@@ -4,6 +4,7 @@
   --text-color: #ffffff;
   --hero-text-color: #212121;
   --client-color: #afb1b8;
+  --card-set: 30px;
 }
 
 p,
@@ -205,7 +206,22 @@ body {
 
 .filter {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-top: -15px;
+  }
 }
 
 .section-main {
@@ -213,9 +229,23 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-top: 15px;
+  }
+}
+
 .cardset__list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .cardset__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * 30px / 2);
+  }
 }
 
 .cursor__title {
@@ -238,10 +268,6 @@ body {
   margin-bottom: 20px;
 }
 
-.cardset__item-portfolio:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
 .cardset__item-portfolio {
   background: #ffffff;
   outline: 1px solid #eeeeee;
@@ -251,6 +277,19 @@ body {
 .cardset__item-portfolio:hover, .cardset__item-portfolio:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .cardset__item-portfolio {
+    width: calc(100% / 2 - 30px);
+    margin: calc(30px / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardset__item-portfolio {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .backdrop.is-hidden {
@@ -701,7 +740,6 @@ body {
   .header-sections {
     display: flex;
     padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
