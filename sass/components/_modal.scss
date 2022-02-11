@@ -23,7 +23,7 @@
   // min-width: 450px;
   min-height: 581px;
   border-radius: 4px;
-  padding: 34px;
+  padding: 40px;
   background-color: var(--text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -149,16 +149,24 @@
   }
 }
 .label-checkbox {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .label-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--hover-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .input-checkbox:checked + .icon-checkbox {
   background-image: url(../images/checkbox.svg);
@@ -248,8 +256,12 @@
   @media screen and (max-width: 479px) {
     width: 100%;
   }
+  @media screen and (min-width: 786px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
+    width: 358px;
   }
 }
 .basment-list__btn {

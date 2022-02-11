@@ -10,6 +10,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
 }
 .footer__container {
   @media screen and (min-width: 768px) {

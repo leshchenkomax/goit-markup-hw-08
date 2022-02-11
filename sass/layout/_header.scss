@@ -62,8 +62,14 @@
 .site-list {
   display: flex;
   align-items: center;
-  margin-left: 93px;
+  // margin-left: 93px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 /* <!--contacts sections --> */
@@ -173,9 +179,9 @@
   opacity: 0;
   pointer-events: none;
 }
-.mob-menu-top {
-  position: relative;
-}
+// .mob-menu-top {
+//   position: relative;
+// }
 .menu-close-btn {
   right: 4%;
   position: absolute;
@@ -228,8 +234,8 @@
   color: #2196f3;
 }
 .open-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 .active-page {
   color: var(--hover-color);

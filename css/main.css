@@ -76,13 +76,13 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 465px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -93,6 +93,7 @@ body {
 }
 
 .button {
+  min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
   margin-left: auto;
@@ -229,6 +230,18 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-main {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-main {
+    padding-top: 94px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .filter__item {
     margin-top: 15px;
@@ -245,6 +258,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: calc(-1 * 30px / 2);
+    padding-bottom: 94px;
   }
 }
 
@@ -316,7 +330,7 @@ body {
   width: 90vw;
   min-height: 581px;
   border-radius: 4px;
-  padding: 34px;
+  padding: 40px;
   background-color: var(--text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
@@ -459,17 +473,31 @@ body {
 }
 
 .label-checkbox {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .label-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--hover-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .label-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-checkbox:checked + .icon-checkbox {
@@ -577,9 +605,16 @@ body {
   }
 }
 
+@media screen and (min-width: 786px) {
+  .subscribe-email {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-email {
     display: flex;
+    width: 358px;
   }
 }
 
@@ -688,8 +723,19 @@ body {
 .site-list {
   display: flex;
   align-items: center;
-  margin-left: 93px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .site-list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-list {
+    margin-left: 93px;
+  }
 }
 
 /* <!--contacts sections --> */
@@ -825,10 +871,6 @@ body {
   pointer-events: none;
 }
 
-.mob-menu-top {
-  position: relative;
-}
-
 .menu-close-btn {
   right: 4%;
   position: absolute;
@@ -883,8 +925,8 @@ body {
 }
 
 .open-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 
 .active-page {
@@ -900,6 +942,12 @@ body {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -946,10 +994,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 30px;
 }
 
 .hero {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .hero-social__icon {
@@ -993,10 +1043,6 @@ body {
   color: #212121;
   padding-top: 94px;
   padding-bottom: 50px;
-}
-
-.work {
-  padding-bottom: 94px;
 }
 
 .about-workers {
@@ -1070,6 +1116,7 @@ body {
   .team__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1148,6 +1195,7 @@ body {
 
 .clients__link {
   display: flex;
+  height: 92px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
@@ -1208,6 +1256,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+  }
 }
 
 @media screen and (min-width: 768px) {

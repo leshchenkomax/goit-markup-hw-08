@@ -7,6 +7,9 @@
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .hero-social__list {
   // display: flex;
@@ -50,9 +53,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 30px;
 }
 .hero {
-  padding-top: 94px;
+  // padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .hero-social__icon {
   display: flex;
@@ -95,9 +101,9 @@
   padding-top: 94px;
   padding-bottom: 50px;
 }
-.work {
-  padding-bottom: 94px;
-}
+// .work {
+//   padding-bottom: 60px;
+// }
 .about-workers {
   background-color: #f5f4fa;
 }
