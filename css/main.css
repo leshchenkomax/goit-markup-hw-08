@@ -226,7 +226,7 @@ body {
 }
 
 .section-main {
-  padding-top: 94px;
+  padding-top: 60px;
   margin-bottom: 50px;
 }
 
@@ -905,8 +905,14 @@ body {
 
 .mob-social {
   display: flex;
-  justify-content: space-between;
   margin-top: 64px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 440px) {
+  .mob-social {
+    max-width: 280px;
+  }
 }
 
 .mob-social__item:not(:last-child) {

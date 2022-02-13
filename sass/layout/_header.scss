@@ -217,8 +217,12 @@
 }
 .mob-social {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   margin-top: 64px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 440px) {
+    max-width: 280px;
+  }
 }
 .mob-social__item:not(:last-child) {
   margin-right: 10px;
